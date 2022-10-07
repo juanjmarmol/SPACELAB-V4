@@ -10,6 +10,10 @@
 	font-size: 60px;
 }
 
+* h2 {
+	font-size: 40px;
+}
+
 * p {
 	margin-bottom: 8px;
 	font-size: 16px;
@@ -25,16 +29,34 @@
 
 body {
 	background-color: rgb(20, 19, 19) !important;
+	overflow-x: hidden;
 }
 
-section {
+.cuerpo {
 	background: linear-gradient(to right,rgb(0 0 0 /.1),rgb(0 0 0 /.1)) ,url(images/fondo.jpg);
+	background-size: cover;
+}
+
+.fondo {
+	background-image: url(images/fondo.jpg);
 	background-size: cover;
 }
 
 .carousel-item {
 	height: 100vh;
 	min-height: 200px;
+}
+
+.carousel-item-cong, .carousel-inner-cong {
+	height: auto !important;
+	min-height: 200px;
+}
+
+.carousel-cong {
+	height: auto;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .overlay-image {
@@ -48,8 +70,9 @@ section {
 	opacity: 0.7;
 }
 
-.w-100 {
-	height: 90vh !important;
+.overlay-image2 {
+	background-position: center;
+	background-size: cover;
 }
 
 .carousel-caption h2 {
@@ -79,9 +102,13 @@ section {
 	margin-top: 15px;
 }
 
+.def {
+	text-align: justify;
+}
+
 .img-logo {
     position: absolute;
-    width: 600px;
+	width: 300px;
     top: 0;
     left: 0;
     right: 0;
@@ -89,30 +116,41 @@ section {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: auto;
-    margin-top: 10%;
+    margin-top: 10px;
 }
 
-@media only screen and (max-width: 767px) {
-	.navbar-nav {
-		text-align: center;
-		background: rgba(0, 0, 0, 0.5);
-	}
-	.carousel-caption {
-		bottom: 165px;
-	}
-	.carousel-caption h5 {
-		font-size: 17px;
-	}
-	.carousel-caption a {
-		padding: 10px 15px;
-		font-size: 15px;
-	}
+.img-logo2 {
+    position: absolute;
+	width: 300px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 100px;
 }
+
+.img-congresos {
+	width: 600px;
+	height: 300px;
+}
+
+.imgsomos {
+	box-shadow: 0 14px 28px rgb(150, 81, 81);
+}
+
+.q-somos {
+	width: 100%;
+}
+
+/*=== BOTONES RETORNO Y TOP ===*/
 
 #btn-back-to-top {
 	position: fixed;
 	bottom: 20px;
-	right: 20px;
+	right: 50px;
 	display: none;
 }
 
@@ -120,27 +158,6 @@ section {
 	position: fixed;
 	top: 100px;
 	left: 50px;
-}
-
-/* QUIENES SOMOS
-
-*/
-
-.fondo {
-	background-image: url(images/fondo.jpg);
-	background-size: cover;
-}
-
-.vh-50 {
-	height: 50vh !important;
-}
-
-.imgsomos {
-	box-shadow: 0 14px 28px rgb(150, 81, 81);
-}
-
-.def {
-	text-align: justify;
 }
 
 /* HACEN PARTE
@@ -151,8 +168,20 @@ section {
 	background-color: black;
 }
 
+.vh-50 {
+	height: 50vh !important;
+}
+
 .vh-25 {
 	height: 25vh !important;
+}
+
+.vh-20 {
+	height: 20vh !important;
+}
+
+.vh-15 {
+	height: 15vh !important;
 }
 
 .vh-10 {
@@ -168,7 +197,7 @@ section {
 	margin-left: 10px;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 767px) {
 	.bordelogo {
 		border: none;
 	}
@@ -181,11 +210,6 @@ section {
 /* INTEGRANTES
 
 */
-
-.overlay-image2 {
-	background-position: center;
-	background-size: cover;
-}
 
 .cols {
 	height: 230px;
@@ -208,4 +232,303 @@ section {
 	border-top: 0.5px solid rgb(80, 79, 79);
 	border-left: 0.5px solid rgb(80, 79, 79);
 	border-right: 0.5px solid rgb(80, 79, 79);
+}
+
+
+/* ============= MEDIAS QUERYS ===============*/
+
+@media only screen and (max-width: 575.98px) {
+	
+	.wrapper {
+		overflow-x: hidden;
+	}
+	.navbar-brand {
+		margin-right: 0px;
+	}
+	.margin-sm {
+		margin-left: 0.2rem !important;
+		margin-right: 0.2rem !important;
+	}
+	.sp-nav {
+		width: 190px;
+	}
+	.sp-footer {
+		width: 320px;
+	}
+	.img-logo {
+		width: 300px;
+		margin-top: 200px;
+	}
+	.img-logo2 {
+		width: 400px;
+		margin-top: 80px;
+	}
+	h1 {
+		font-size: 40px !important;
+	}
+	h2 {
+		font-size: 28px !important;
+		font-weight: bold !important;
+	}
+	h4 {
+		font-size: 18px !important;
+	}
+	p {
+		font-size: 14px !important;
+	}
+	.tit-h2 {
+		font-size: 30px !important;
+	}
+	.imgsomos {
+		width: 280px !important;
+		margin-bottom: 3rem !important;
+	}
+	.carousel-caption {
+		left: 8%;
+		right: 8%;
+	}
+	.carousel-caption h2 {
+		font-size: 20px !important;
+	}
+	
+	/* ================ QUIENES SOMOS =================== */
+	
+	.q-somos {
+		width: 80%;
+	}
+	#btn-back-to-top {
+		bottom: 55px;
+		right: 45px;
+	}
+	.btn-return {
+		position: fixed;
+		top: 80px;
+		left: 12px;
+	}
+	.fondo-sm {
+		background-color: rgb(39, 35, 35);
+	}
+
+	/* ================ INTEGRANTES =================== */
+	.grid-sm {
+		width: 80% !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+	.center-sm {
+		justify-content: center !important;
+		text-align: center !important;
+	}
+
+	/* ================ PROYECTOS =================== */
+	.width-sm {
+		width: 90% !important;
+	}
+	.tit-offset {
+		height: 30vh;
+	}
+	.tit-offset2 {
+		height: 25vh;
+	}
+	.tit-offset-tit {
+		height: 22vh;
+	}
+	.img-proyecto {
+		width: 300px;
+	}
+	.fsize {
+		font-size: 18px !important;
+	}
+	.tit-h2 {
+		font-size: 30px !important;
+	}
+
+	/* ================ CONGRESOS =================== */
+	.carousel-cong {
+		width: 80%;
+	}
+	.carousel-item-cong, .carousel-inner-cong, .img-congresos {
+		height: 230px !important;
+		min-height: 200px;	
+	}
+	.img-congresos{
+		opacity: 1 !important;
+	}
+}
+
+
+
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+
+	* h4 {
+		font-size: 25px;
+	}
+	* p {
+		font-size: 18px;
+	}
+	.margin-sm {
+		margin-left: 0rem !important;
+		margin-right: 0rem !important;
+	}
+	.fondo-sm {
+		background-color: rgb(39, 35, 35);
+	}
+	.img-logo {
+		width: 400px !important;
+		margin-top: 200px !important;
+	}
+	.img-logo2 {
+		width: 500px !important;
+		margin-top: 200px !important;
+	}
+	.imgsomos {
+		width: 400px !important;
+		margin-bottom: 3rem !important;
+	}
+	.q-somos {
+		width: 80%;
+	}
+	.btn-return {
+		position: fixed;
+		top: 100px;
+		left: 15px;
+	}
+	/* ================ INTEGRANTES =================== */
+	.center-sm {
+		justify-content: center !important;
+		text-align: center !important;
+	}
+	.grid-sm {
+		width: 50% !important;
+	}
+	/* ================ PROYECTOS =================== */
+	.width-sm {
+		width: 90%;
+	}
+	.img-proyecto {
+		width: 500px;
+	}
+	/* ================ CONGRESOS =================== */
+	.carousel-cong {
+		width: 80%;
+	}
+	.carousel-item-cong, .carousel-inner-cong, .img-congresos {
+		height: 400px !important;
+		min-height: 200px;
+	}
+	.tit-h2 {
+		font-size: 20px !important;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+	* p {
+		font-size: 18px;
+	}
+	.uv-nav {
+		width: 60px;
+	}
+	.carousel-caption h2 {
+		font-size: 30px;
+	}
+	.carousel-caption p {
+		font-size: 25px;
+	}
+	.fondo-sm {
+		background-color: rgb(39, 35, 35);
+	}
+	.sp-nav {
+		width: 300px;
+	}
+	.fondo-sm {
+		font-size: 20px;
+	}
+	.img-logo {
+		width: 700px !important;
+		margin-top: 200px !important;
+	}
+	.img-logo2 {
+		width: 850px !important;
+		margin-top: 200px !important;
+	}
+	.q-somos p {
+		font-size: 18px;
+	}
+	.width-sm {
+		width: 90%;
+	}
+	/* ================ PROYECTOS =================== */
+	.img-proyecto {
+		width: 600px;
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+	.width-sm {
+		width: 90%;
+	}
+}
+
+@media only screen and (min-width: 1400px) {
+	.width-sm {
+		width: 90%;
+	}
+}
+
+/* ================ MEDIA QUERIES HORIZONTALES =================== */
+
+@media (max-width: 700px) and (orientation: landscape) {
+	* h4 {
+		font-size: 20px;		
+	}
+	.tit-h2 {
+		font-size: 30px !important;
+		font-weight: bold !important;
+	}
+	.fsize {
+		font-size: 22px !important;
+	}
+	.fondo-sm {
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+	.img-logo {
+		width: 380px !important;
+		margin-top: 100px !important;
+	}
+	.img-logo2 {
+		width: 450px !important;
+		margin-top: 50px !important;
+	}
+	.carousel-caption h2 {
+		font-size: 18px !important;
+	}
+	.carousel-caption {
+		margin-bottom: 1rem !important;
+	}
+	.carousel-caption p {
+		font-size: 15px;
+	}
+	#btn-back-to-top {
+		bottom: 40px;
+	}
+	.btn-return {
+		position: fixed;
+		top: 90px;
+		left: 15px;
+	}
+	.tit-offset {
+		height: 50vh;
+	}
+	.tit-offset2 {
+		height: 40vh;
+	}
+	.tit-offset-tit {
+		height: 42vh;
+	}
+	.grid-sm {
+		width: 60% !important;
+	}
+	.img-proyecto {
+		width: 350px
+	}
 }
