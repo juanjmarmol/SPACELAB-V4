@@ -6,25 +6,12 @@
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-* h1 {
-	font-size: 60px;
-}
-
-* h2 {
-	font-size: 40px;
-}
-
-* p {
-	margin-bottom: 8px;
-	font-size: 16px;
-}
-
 .bg-dark {
-	background-color: rgba(31, 28, 28) !important;
+	background-color: rgba(31, 28, 30) !important;
 }
 
 .dark-text {
-	background-color: rgba(31, 28, 28, 0.3) !important;
+	background-color: rgba(31, 28, 28, 0.45) !important;
 }
 
 body {
@@ -34,11 +21,6 @@ body {
 
 .cuerpo {
 	background: linear-gradient(to right,rgb(0 0 0 /.1),rgb(0 0 0 /.1)) ,url(images/fondo.jpg);
-	background-size: cover;
-}
-
-.fondo {
-	background-image: url(images/fondo.jpg);
 	background-size: cover;
 }
 
@@ -76,7 +58,6 @@ body {
 }
 
 .carousel-caption h2 {
-	font-size: 25px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
     top: 20%;
@@ -86,7 +67,6 @@ body {
 .carousel-caption p {
 	width: 70%;
 	margin: auto;
-	font-size: 18px;
 	line-height: 1.9;
 }
 
@@ -133,16 +113,11 @@ body {
 }
 
 .img-congresos {
-	width: 600px;
-	height: 300px;
+	height: 60vh;
 }
 
 .imgsomos {
 	box-shadow: 0 14px 28px rgb(150, 81, 81);
-}
-
-.q-somos {
-	width: 100%;
 }
 
 /*=== BOTONES RETORNO Y TOP ===*/
@@ -163,30 +138,6 @@ body {
 /* HACEN PARTE
 
 */
-
-.bgcolor {
-	background-color: black;
-}
-
-.vh-50 {
-	height: 50vh !important;
-}
-
-.vh-25 {
-	height: 25vh !important;
-}
-
-.vh-20 {
-	height: 20vh !important;
-}
-
-.vh-15 {
-	height: 15vh !important;
-}
-
-.vh-10 {
-	height: 10vh !important;
-}
 
 .w-90 {
 	width: 90% !important;
@@ -234,6 +185,11 @@ body {
 	border-right: 0.5px solid rgb(80, 79, 79);
 }
 
+.headertitulo {
+	height: 95px;
+	background-color: transparent;
+}
+
 
 /* ============= MEDIAS QUERYS ===============*/
 
@@ -256,28 +212,12 @@ body {
 		width: 320px;
 	}
 	.img-logo {
-		width: 300px;
-		margin-top: 200px;
+		width: 90%;
+		margin-top: 50%;
 	}
 	.img-logo2 {
-		width: 400px;
-		margin-top: 80px;
-	}
-	h1 {
-		font-size: 40px !important;
-	}
-	h2 {
-		font-size: 28px !important;
-		font-weight: bold !important;
-	}
-	h4 {
-		font-size: 18px !important;
-	}
-	p {
-		font-size: 14px !important;
-	}
-	.tit-h2 {
-		font-size: 30px !important;
+		width: 100%;
+		margin-top: 30%;
 	}
 	.imgsomos {
 		width: 280px !important;
@@ -286,9 +226,6 @@ body {
 	.carousel-caption {
 		left: 8%;
 		right: 8%;
-	}
-	.carousel-caption h2 {
-		font-size: 20px !important;
 	}
 	
 	/* ================ QUIENES SOMOS =================== */
@@ -324,23 +261,8 @@ body {
 	.width-sm {
 		width: 90% !important;
 	}
-	.tit-offset {
-		height: 30vh;
-	}
-	.tit-offset2 {
-		height: 25vh;
-	}
-	.tit-offset-tit {
-		height: 22vh;
-	}
-	.img-proyecto {
-		width: 300px;
-	}
-	.fsize {
-		font-size: 18px !important;
-	}
-	.tit-h2 {
-		font-size: 30px !important;
+	.img-proyecto, .img-proyecto2 {
+		width: 90%;
 	}
 
 	/* ================ CONGRESOS =================== */
@@ -360,12 +282,6 @@ body {
 
 @media only screen and (min-width: 576px) and (max-width: 767.98px) {
 
-	* h4 {
-		font-size: 25px;
-	}
-	* p {
-		font-size: 18px;
-	}
 	.margin-sm {
 		margin-left: 0rem !important;
 		margin-right: 0rem !important;
@@ -374,15 +290,15 @@ body {
 		background-color: rgb(39, 35, 35);
 	}
 	.img-logo {
-		width: 400px !important;
-		margin-top: 200px !important;
+		width: 90% !important;
+		margin-top: 30% !important;
 	}
 	.img-logo2 {
-		width: 500px !important;
-		margin-top: 200px !important;
+		width: 100% !important;
+		margin-top: 10% !important;
 	}
 	.imgsomos {
-		width: 400px !important;
+		width: 70% !important;
 		margin-bottom: 3rem !important;
 	}
 	.q-somos {
@@ -405,8 +321,8 @@ body {
 	.width-sm {
 		width: 90%;
 	}
-	.img-proyecto {
-		width: 500px;
+	.img-proyecto, .img-proyecto2 {
+		width: 90%;
 	}
 	/* ================ CONGRESOS =================== */
 	.carousel-cong {
@@ -416,23 +332,11 @@ body {
 		height: 400px !important;
 		min-height: 200px;
 	}
-	.tit-h2 {
-		font-size: 20px !important;
-	}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
-	* p {
-		font-size: 18px;
-	}
 	.uv-nav {
 		width: 60px;
-	}
-	.carousel-caption h2 {
-		font-size: 30px;
-	}
-	.carousel-caption p {
-		font-size: 25px;
 	}
 	.fondo-sm {
 		background-color: rgb(39, 35, 35);
@@ -440,54 +344,107 @@ body {
 	.sp-nav {
 		width: 300px;
 	}
-	.fondo-sm {
-		font-size: 20px;
-	}
 	.img-logo {
-		width: 700px !important;
-		margin-top: 200px !important;
+		width: 90% !important;
+		margin-top: 20% !important;
 	}
 	.img-logo2 {
-		width: 850px !important;
-		margin-top: 200px !important;
-	}
-	.q-somos p {
-		font-size: 18px;
+		width: 100% !important;
+		margin-top: 10% !important;
 	}
 	.width-sm {
+		width: 90%;
+	}
+	/* ================ INTEGRANTES =================== */
+	.grid-sm {
 		width: 90%;
 	}
 	/* ================ PROYECTOS =================== */
+	.img-proyecto, .img-proyecto2 {
+		width: 45%;
+	}
+	/* ================ CONGRESOS =================== */
+	.carousel-cong {
+		width: 90%;
+	}
+	.carousel-item-cong, .carousel-inner-cong, .img-congresos {
+		width: 100% !important;	
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+	.img-logo {
+		width: 80% !important;
+		margin-top: 20% !important;
+	}
+	.img-logo2 {
+		width: 90% !important;
+		margin-top: 10% !important;
+	}
+	/* ================ INTEGRANTES =================== */
+	.grid-sm {
+	width: 90%;
+	}
+	/* ================ PROYECTOS =================== */
 	.img-proyecto {
-		width: 600px;
+		width: 45%;
 	}
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-	.width-sm {
+	.img-proyecto2 {
+		width: 30%;
+	}
+	.carousel-cong {
 		width: 90%;
 	}
-}
+}	
 
-@media only screen and (min-width: 1400px) {
-	.width-sm {
-		width: 90%;
+@media only screen and (min-width: 1200px) {
+	.img-congresos {
+		height: auto !important;
+		opacity: 1 !important;
 	}
 }
 
 /* ================ MEDIA QUERIES HORIZONTALES =================== */
 
-@media (max-width: 700px) and (orientation: landscape) {
-	* h4 {
-		font-size: 20px;		
+@media only screen and (min-width: 600px) and (max-width: 815px) and (orientation: landscape) {
+	.fondo-sm {
+		background-color: rgba(0, 0, 0, 0.4);
 	}
-	.tit-h2 {
-		font-size: 30px !important;
-		font-weight: bold !important;
+	.img-logo {
+		width: 380px !important;
+		margin-top: 80px !important;
 	}
-	.fsize {
-		font-size: 22px !important;
+	.img-logo2 {
+		width: 450px !important;
+		margin-top: 50px !important;
 	}
+	.carousel-caption {
+		margin-bottom: 1rem !important;
+	}
+	#btn-back-to-top {
+		right: 20px;
+		bottom: 40px;
+	}
+	.btn-return {
+		position: fixed;
+		top: 90px;
+		left: 15px;
+	}
+	.grid-sm {
+		width: 75% !important;
+	}
+	.img-proyecto {
+		width: 45%
+	}
+	.img-proyecto2 {
+		width: 30%
+	}
+	
+}
+
+
+
+@media only screen and (min-width: 815.98px) and (max-width: 890px) and (orientation: landscape) {
 	.fondo-sm {
 		background-color: rgba(0, 0, 0, 0.4);
 	}
@@ -499,14 +456,8 @@ body {
 		width: 450px !important;
 		margin-top: 50px !important;
 	}
-	.carousel-caption h2 {
-		font-size: 18px !important;
-	}
 	.carousel-caption {
 		margin-bottom: 1rem !important;
-	}
-	.carousel-caption p {
-		font-size: 15px;
 	}
 	#btn-back-to-top {
 		bottom: 40px;
@@ -516,19 +467,89 @@ body {
 		top: 90px;
 		left: 15px;
 	}
-	.tit-offset {
-		height: 50vh;
-	}
-	.tit-offset2 {
-		height: 40vh;
-	}
-	.tit-offset-tit {
-		height: 42vh;
-	}
 	.grid-sm {
-		width: 60% !important;
+		width: 75% !important;
 	}
 	.img-proyecto {
-		width: 350px
+		width: 45%
+	}
+	.img-proyecto2 {
+		width: 30%
+	}
+}
+
+@media only screen and (min-width: 861px) and (max-width: 1199.98px) and (orientation: landscape) {
+	.fondo-sm {
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+	.img-logo {
+		width: 100% !important;
+		margin-top: 10% !important;
+	}
+	.img-logo2 {
+		width: 100% !important;
+		margin-top: 3% !important;
+	}
+	.carousel-caption {
+		margin-bottom: 1rem !important;
+	}
+	#btn-back-to-top {
+		bottom: 40px;
+	}
+	.btn-return {
+		position: fixed;
+		top: 90px;
+		left: 15px;
+	}
+	.grid-sm {
+		width: 90% !important;
+	}
+	.img-proyecto {
+		width: 45%
+	}
+	.img-proyecto2 {
+		width: 30%
+	}
+	/* ================ CONGRESOS =================== */
+	.carousel-cong {
+		width: 90%;
+	}
+	.carousel-item-cong, .carousel-inner-cong, .img-congresos {
+		height: 520px !important;
+		min-height: 400px;	
+	}
+	.img-congresos {
+		height: auto !important;
+		opacity: 1 !important;
+	}
+}
+
+@media only screen and (min-width: 1200px) and (orientation: landscape) {
+	.grid-sm{
+		width: 90%;
+	}
+	.img-logo {
+		width: 70% !important;
+		margin-top: 10% !important;
+	}
+	.img-logo2 {
+		width: 70% !important;
+		margin-top: 5% !important;
+	}
+	.carousel-cong {
+		width: 90%;
+	}
+	.carousel-item-cong, .carousel-inner-cong, .img-congresos {
+		width: 100% !important;	
+	}
+	.img-congresos {
+		height: auto !important;
+		opacity: 1 !important;
+	}
+	.img-proyecto {
+		width: 45%
+	}
+	.img-proyecto2 {
+		width: 30%
 	}
 }
