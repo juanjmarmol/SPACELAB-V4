@@ -1,0 +1,554 @@
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
+* h1,h2,h3,h4,h5,h6 {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg-dark {
+	background-color: rgba(31, 28, 30) !important;
+}
+
+.dark-text {
+	background-color: rgba(31, 28, 28, 0.45) !important;
+}
+
+body {
+	background-color: rgb(20, 19, 19) !important;
+	overflow-x: hidden;
+}
+
+.cuerpo {
+	background: linear-gradient(to right,rgb(0 0 0 /.1),rgb(0 0 0 /.1)) ,url(../images/fondo.jpg);
+	background-size: cover;
+}
+
+.carousel-item {
+	height: 100vh;
+	min-height: 200px;
+}
+
+.carousel-item-cong, .carousel-inner-cong {
+	height: auto !important;
+	min-height: 200px;
+}
+
+.carousel-cong {
+	height: auto;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.overlay-image {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	background-position: center;
+	background-size: cover;
+	opacity: 0.5;
+}
+
+.overlay-image2 {
+	background-position: center;
+	background-size: cover;
+}
+
+.carousel-caption h2 {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+    top: 20%;
+    margin-bottom: 30px;
+}
+
+.carousel-caption p {
+	width: 70%;
+	margin: auto;
+	line-height: 1.9;
+}
+
+.carousel-caption a {
+	text-transform: uppercase;
+	text-decoration: none;
+    font-weight: bold;
+	background: #FD6262;
+	padding: 10px 30px;
+    border-radius: 5px;
+	display: inline-block;
+	color: #000;
+	margin-top: 15px;
+}
+
+.def {
+	text-align: justify;
+}
+
+.img-logo {
+    position: absolute;
+	width: 300px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 10px;
+}
+
+.img-logo2 {
+    position: absolute;
+	width: 300px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 100px;
+}
+
+.img-congresos {
+	height: 60vh;
+}
+
+.imgsomos {
+	box-shadow: 0 14px 28px rgb(150, 81, 81);
+}
+
+/*=== BOTONES RETORNO Y TOP ===*/
+
+#btn-back-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 50px;
+	display: none;
+}
+
+.btn-return {
+	position: fixed;
+	top: 100px;
+	left: 50px;
+}
+
+/* HACEN PARTE
+
+*/
+
+.w-90 {
+	width: 90% !important;
+}
+
+.bordelogo {
+	border: solid 1px rgba(255, 255, 255, 0.274);
+	margin-left: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+	.bordelogo {
+		border: none;
+	}
+}
+
+.fitbox {
+	box-sizing: border-box;
+}
+
+/* INTEGRANTES
+
+*/
+
+.cols {
+	height: 230px;
+}
+
+.textit {
+	color: #FD6262;
+}
+
+.textcorreo {
+	color: #FEB0B0;
+}
+
+.imgdocentes {
+	width: 180px;
+	height: 200px;
+}
+
+.bordeslist {
+	border-top: 0.5px solid rgb(80, 79, 79);
+	border-left: 0.5px solid rgb(80, 79, 79);
+	border-right: 0.5px solid rgb(80, 79, 79);
+}
+
+.headertitulo {
+	height: 95px;
+	background-color: transparent;
+}
+
+
+/* ============= MEDIAS QUERYS ===============*/
+
+@media only screen and (max-width: 575.98px) {
+	
+	.wrapper {
+		overflow-x: hidden;
+	}
+	.navbar-brand {
+		margin-right: 0px;
+	}
+	.margin-sm {
+		margin-left: 0.2rem !important;
+		margin-right: 0.2rem !important;
+	}
+	.sp-nav {
+		width: 190px;
+	}
+	.sp-footer {
+		width: 320px;
+	}
+	.img-logo {
+		width: 90%;
+		margin-top: 50%;
+	}
+	.img-logo2 {
+		width: 100%;
+		margin-top: 30%;
+	}
+	.imgsomos {
+		width: 280px !important;
+		margin-bottom: 3rem !important;
+	}
+	.carousel-caption {
+		left: 8%;
+		right: 8%;
+	}
+	
+	/* ================ QUIENES SOMOS =================== */
+	
+	.q-somos {
+		width: 80%;
+	}
+	#btn-back-to-top {
+		bottom: 55px;
+		right: 45px;
+	}
+	.btn-return {
+		position: fixed;
+		top: 80px;
+		left: 12px;
+	}
+	.fondo-sm {
+		background-color: rgb(39, 35, 35);
+	}
+
+	/* ================ INTEGRANTES =================== */
+	.grid-sm {
+		width: 80% !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+	.center-sm {
+		justify-content: center !important;
+		text-align: center !important;
+	}
+
+	/* ================ PROYECTOS =================== */
+	.width-sm {
+		width: 90% !important;
+	}
+	.img-proyecto, .img-proyecto2 {
+		width: 90%;
+	}
+
+	/* ================ CONGRESOS =================== */
+	.carousel-cong {
+		width: 80%;
+	}
+	.carousel-item-cong, .carousel-inner-cong, .img-congresos {
+		height: 230px !important;
+		min-height: 200px;	
+	}
+	.img-congresos{
+		opacity: 1 !important;
+	}
+}
+
+
+
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+
+	.margin-sm {
+		margin-left: 0rem !important;
+		margin-right: 0rem !important;
+	}
+	.fondo-sm {
+		background-color: rgb(39, 35, 35);
+	}
+	.img-logo {
+		width: 60% !important;
+		margin-top: 30% !important;
+	}
+	.img-logo2 {
+		width: 80% !important;
+		margin-top: 10% !important;
+	}
+	.imgsomos {
+		width: 70% !important;
+		margin-bottom: 3rem !important;
+	}
+	.q-somos {
+		width: 80%;
+	}
+	.btn-return {
+		position: fixed;
+		top: 100px;
+		left: 15px;
+	}
+	/* ================ INTEGRANTES =================== */
+	.center-sm {
+		justify-content: center !important;
+		text-align: center !important;
+	}
+	.grid-sm {
+		width: 50% !important;
+	}
+	/* ================ PROYECTOS =================== */
+	.width-sm {
+		width: 90%;
+	}
+	.img-proyecto, .img-proyecto2 {
+		width: 90%;
+	}
+	/* ================ CONGRESOS =================== */
+	.carousel-cong {
+		width: 80%;
+	}
+	.carousel-item-cong, .carousel-inner-cong, .img-congresos {
+		height: 400px !important;
+		min-height: 200px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+	.uv-nav {
+		width: 60px;
+	}
+	.fondo-sm {
+		background-color: rgb(39, 35, 35);
+	}
+	.sp-nav {
+		width: 300px;
+	}
+	.img-logo {
+		width: 60% !important;
+		margin-top: 20% !important;
+	}
+	.img-logo2 {
+		width: 80% !important;
+		margin-top: 20% !important;
+	}
+	.width-sm {
+		width: 90%;
+	}
+	/* ================ INTEGRANTES =================== */
+	.grid-sm {
+		width: 90%;
+	}
+	/* ================ PROYECTOS =================== */
+	.img-proyecto, .img-proyecto2 {
+		width: 45%;
+	}
+	/* ================ CONGRESOS =================== */
+	.carousel-cong {
+		width: 90%;
+	}
+	.carousel-item-cong, .carousel-inner-cong, .img-congresos {
+		width: 100% !important;	
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+	.img-logo {
+		width: 60% !important;
+		margin-top: 20% !important;
+	}
+	.img-logo2 {
+		width: 60% !important;
+		margin-top: 10% !important;
+	}
+	/* ================ INTEGRANTES =================== */
+	.grid-sm {
+	width: 90%;
+	}
+	/* ================ PROYECTOS =================== */
+	.img-proyecto {
+		width: 45%;
+	}
+	.img-proyecto2 {
+		width: 30%;
+	}
+	.carousel-cong {
+		width: 90%;
+	}
+}	
+
+@media only screen and (min-width: 1200px) {
+	.img-congresos {
+		height: auto !important;
+		opacity: 1 !important;
+	}
+}
+
+/* ================ MEDIA QUERIES HORIZONTALES =================== */
+
+@media only screen and (min-width: 600px) and (max-width: 815px) and (orientation: landscape) {
+	.fondo-sm {
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+	.img-logo {
+		width: 380px !important;
+		margin-top: 80px !important;
+	}
+	.img-logo2 {
+		width: 450px !important;
+		margin-top: 50px !important;
+	}
+	.carousel-caption {
+		margin-bottom: 1rem !important;
+	}
+	#btn-back-to-top {
+		right: 20px;
+		bottom: 40px;
+	}
+	.btn-return {
+		position: fixed;
+		top: 90px;
+		left: 15px;
+	}
+	.grid-sm {
+		width: 75% !important;
+	}
+	.img-proyecto {
+		width: 45%
+	}
+	.img-proyecto2 {
+		width: 30%
+	}
+	
+}
+
+
+
+@media only screen and (min-width: 815.98px) and (max-width: 889.98px) and (orientation: landscape) {
+	.fondo-sm {
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+	.img-logo {
+		width: 60% !important;
+		margin-top: 15% !important;
+	}
+	.img-logo2 {
+		width: 60% !important;
+		margin-top: 12% !important;
+	}
+	.carousel-caption {
+		margin-bottom: 1rem !important;
+	}
+	#btn-back-to-top {
+		bottom: 40px;
+	}
+	.btn-return {
+		position: fixed;
+		top: 90px;
+		left: 15px;
+	}
+	.grid-sm {
+		width: 75% !important;
+	}
+	.img-proyecto {
+		width: 45%
+	}
+	.img-proyecto2 {
+		width: 30%
+	}
+}
+
+@media only screen and (min-width: 890px) and (max-width: 1199.98px) and (orientation: landscape) {
+	.fondo-sm {
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+	.img-logo {
+		width: 60% !important;
+		margin-top: 10% !important;
+	}
+	.img-logo2 {
+		width: 60% !important;
+		margin-top: 3% !important;
+	}
+	.carousel-caption {
+		margin-bottom: 1rem !important;
+	}
+	#btn-back-to-top {
+		bottom: 40px;
+	}
+	.btn-return {
+		position: fixed;
+		top: 90px;
+		left: 15px;
+	}
+	.grid-sm {
+		width: 90% !important;
+	}
+	.img-proyecto {
+		width: 45%
+	}
+	.img-proyecto2 {
+		width: 30%
+	}
+	/* ================ CONGRESOS =================== */
+	.carousel-cong {
+		width: 90%;
+	}
+	.carousel-item-cong, .carousel-inner-cong, .img-congresos {
+		height: 60vh !important;
+	}
+	.img-congresos {
+		height: auto !important;
+		opacity: 1 !important;
+	}
+}
+
+@media only screen and (min-width: 1200px) and (orientation: landscape) {
+	.grid-sm{
+		width: 90%;
+	}
+	.img-logo {
+		width: 40% !important;
+		margin-top: 10% !important;
+	}
+	.img-logo2 {
+		width: 40% !important;
+		margin-top: 5% !important;
+	}
+	.carousel-cong {
+		width: 55%;
+	}
+	.carousel-item-cong, .carousel-inner-cong, .img-congresos {
+		width: 100% !important;	
+	}
+	.img-proyecto {
+		width: 35%
+	}
+	.img-proyecto2 {
+		width: 25%
+	}
+	.img-congresos {
+		height: 70vh !important;
+		opacity: 1 !important;
+	}
+}
